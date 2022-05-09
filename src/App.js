@@ -1,11 +1,15 @@
 import './App.css';
 import Navbar from "./components/navbar"
-function App() {
-  return (
-    <>
-      <Navbar />
-    </>
+import Footer from "./components/Footer/footer";
+
+  const App = () => (
+    <div className="page-container">
+      <div className="content-wrap">
+        <Navbar />
+      </div>
+      <Footer />
+    </div>
   );
-}
+  
 
 export default App;
