@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./Footer.css";
+import "./footer.css";
 
 
 function Footer() {
@@ -20,20 +20,20 @@ function Footer() {
           {/* Column2 */}
           <div className="col">
             <h4>We Accept</h4>
-            <ui className="list-unstyled">
+            <ul className="list-unstyled">
               <li>DANK MEMES</li>
               <li>OTHER STUFF</li>
               <li>GUD STUFF</li>
-            </ui>
+            </ul>
           </div>
           {/* Column3 */}
           <div className="col">
             <h4>Contact Us</h4>
-            <ui className="list-unstyled">
+            <ul className="list-unstyled">
               <li>DANK MEMES</li>
               <li>OTHER STUFF</li>
               <li>GUD STUFF</li>
-            </ui>
+            </ul>
           </div>
         </div>
         <hr />
