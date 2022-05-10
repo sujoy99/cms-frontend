@@ -1,7 +1,7 @@
 import './App.css';
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer/Footer";
-import Login from "./components/Login/Login"
+import Navbar from "./components/navbar"
+import Footer from "./components/Footer/footer";
+import Login from "./components/Login/login"
 import Welcome from './components/Welcome/Welcome'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
