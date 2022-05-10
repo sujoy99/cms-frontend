@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-
+import login from"./Login/login"
+import {useHistory} from "react-router-dom"
 const Navbar = () => {
 
 	const [show, setShow] = useState(false)
+	let history=useHistory();
 
 	return (
 		<>
@@ -45,7 +47,7 @@ const Navbar = () => {
 							<form class="d-flex">
 
 								<button class="btn btn-style" type="submit">Sign Up</button>
-								<button class="btn btn-style btn-style-border" type="submit">Log In</button>
+								<button class="btn btn-style btn-style-border" type="submit" onClick={()=>{history.push("/login");}}> Log In</button>
 							</form>
 						</div>
 
