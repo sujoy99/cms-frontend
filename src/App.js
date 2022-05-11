@@ -5,6 +5,7 @@ import Login from "./components/Login/login"
 import Welcome from './components/Welcome/Welcome'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Signup from './components/SignUp/signup';
 
 const App = () => (
 
@@ -16,6 +17,7 @@ const App = () => (
       <Routes>
         <Route exact path='/' element={< Welcome />}></Route>
         <Route exact path='/login' element={< Login />}></Route>
+        <Route exact path='/signup' element={< Signup />}></Route>
       </Routes>
       <Footer />
     </div>

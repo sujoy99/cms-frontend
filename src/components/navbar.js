@@ -7,10 +7,14 @@ const Navbar = () => {
 	const [show, setShow] = useState(false)
 	let navigate = useNavigate(); 
 	const routeChange = () =>{ 
-		let path = `/login`; 
+		let path = `/signup`; 
 		navigate(path);
 		// window.location(path)
 	  }
+	const routeChange1 = () =>{ 
+	  let path1 = `/login`; 
+	  navigate(path1);
+	}
 
 	return (
 		<>
@@ -52,8 +56,8 @@ const Navbar = () => {
 							</ul>
 							<form className="d-flex">
 
-								<button className="btn btn-style" type="submit">Sign Up</button>
-								<button className="btn btn-style btn-style-border" type="submit" onClick={routeChange}> Log In</button>
+								<button className="btn btn-style" type="submit" onClick={routeChange}>Sign Up</button>
+								<button className="btn btn-style btn-style-border" type="submit" onClick={routeChange1}> Log In</button>
 							</form>
 						</div>
 

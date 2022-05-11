@@ -1,9 +1,12 @@
 import React from 'react'
+import './Welcome.css';
+import ImageSlider from '../ImageSlider';
+import { SliderData } from '../SliderData';
 
-const Welcome = () => {
+function Welcome() {
     return (
         <div>
-            <h1>This is public welcome page</h1>
+             <ImageSlider slides={SliderData} />;
         </div>
     )
 }
