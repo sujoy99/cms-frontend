@@ -17,7 +17,6 @@ import "../Welcome/Welcome.css"
 function Welcome() {
     return (
         <div className="container mt-5 carousel">
-            <h1 className="slider_title">React Image Carousel</h1>
             <ImageSlider />
         </div>
     );

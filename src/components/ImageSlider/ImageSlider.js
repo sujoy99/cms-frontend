@@ -16,30 +16,29 @@ export default class ImageSlider extends React.Component{
             ImageSlider: true,
             infinite: true,
             centerPadding: "60px",
-            slidesToShow: 3,
+            slidesToShow: 5,
             speed: 500
         };
         return (
             <div>
-                <h2>Center Mode</h2>
                 <Slider {...settings}>
                     <div>
                         <img src={profile} alt="profile" className="profile" />
                     </div>
                     <div>
-                        <h3>2</h3>
+                        <img src={profile1} alt="profile" className="profile" />
                     </div>
                     <div>
-                        <h3>3</h3>
+                        <img src={profile2} alt="profile" className="profile" />
                     </div>
                     <div>
-                        <h3>4</h3>
+                        <img src={profile3} alt="profile" className="profile" />
                     </div>
                     <div>
-                        <h3>5</h3>
+                        <img src={profile} alt="profile" className="profile" />
                     </div>
                     <div>
-                        <h3>6</h3>
+                        <img src={profile2} alt="profile" className="profile" />
                     </div>
                 </Slider>
             </div>

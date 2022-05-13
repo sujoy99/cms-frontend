@@ -29,7 +29,7 @@ const Navbar = () => {
 						<div className={`collapse navbar-collapse ${show ? "show" : " "} `} >
 							<ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
 								<li className="nav-item">
-									<a className="nav-link active" aria-current="page" href="#">Home</a>
+									<a className="nav-link active" aria-current="page" href="/">Home</a>
 								</li>
 								<li className="nav-item">
 									<a className="nav-link" href="/chef">Chef</a>

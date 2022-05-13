@@ -11,11 +11,11 @@ function Footer() {
           {/* Column1 */}
           <div className="col">
             <h2>Office Address</h2>
-            <h1 className="list-unstyled">
+            <h5 className="list-unstyled">
               <li>Block C, Road-08, BashundharaR/A</li>
               <li>+8801826192068</li>
               <li>chef@gmail.com</li>
-            </h1>
+            </h5>
           </div>
           {/* Column2 */}
           <div className="col">
