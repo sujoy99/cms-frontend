@@ -6,7 +6,11 @@ import email from "./../images/gmail.png";
 import pass from "./../images/password.png";
 function Login() {
   const [show, setShow] = useState(false)
-	let navigate = useNavigate();
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  let navigate = useNavigate();
+  
   const routeChange = () =>{ 
 		let path = `/`; 
 		navigate(path);
