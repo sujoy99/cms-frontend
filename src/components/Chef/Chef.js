@@ -15,13 +15,20 @@ const Chef = () => {
                                     <img src="./images/logo512.png" alt="" className="img-fluid rounded" height="50px" width="50px"></img>
                                 </div>
                                 <div className="col-11">
-                                    <h4>Name</h4>
-                                    <h5>Category</h5>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <h4>Name</h4>
+                                            <h5>Category</h5>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div className="col-2">
+                                            <a className="btn btn-sm btn-primary p-3 rounded">Detail</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 

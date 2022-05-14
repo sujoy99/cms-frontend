@@ -1,20 +1,7 @@
 import React, { useState } from 'react'
 
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
 const Navbar = () => {
-
 	const [show, setShow] = useState(false)
-	let navigate = useNavigate(); 
-	const routeChange = () =>{ 
-		let path = `/signup`; 
-		navigate(path);
-		// window.location(path)
-	  }
-	const routeChange1 = () =>{ 
-	  let path1 = `/login`; 
-	  navigate(path1);
-	}
 
 	return (
 		<>
@@ -29,7 +16,7 @@ const Navbar = () => {
 						<div className={`collapse navbar-collapse ${show ? "show" : " "} `} >
 							<ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
 								<li className="nav-item">
-									<a className="nav-link active" aria-current="page" href="#">Home</a>
+									<a className="nav-link active" aria-current="page" href="/">Home</a>
 								</li>
 								<li className="nav-item">
 									<a className="nav-link" href="/chef">Chef</a>
@@ -55,9 +42,8 @@ const Navbar = () => {
 
 							</ul>
 							<form className="d-flex">
-
-								<button className="btn btn-style" type="submit" onClick={routeChange}>Sign Up</button>
-								<button className="btn btn-style btn-style-border" type="submit" onClick={routeChange1}> Log In</button>
+								<a className="btn btn-style" href="/signup" style={{ paddingTop: "6px" }}>Sign Up</a>
+								<a className="btn btn-style btn-style-border" href="/login" style={{ paddingTop: "6px" }}>Log In</a>
 							</form>
 						</div>
 

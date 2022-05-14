@@ -1,57 +1,74 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
+import loginValidation from '../validation/loginValidation'
 import './login.css';
 import profile from "./../images/team.png";
-import email from "./../images/gmail.png";
-import pass from "./../images/password.png";
+
 function Login() {
-  const [show, setShow] = useState(false)
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [values, setValues] = useState({
+    email: "",
+    password: "",
+  })
+  const [errors, setErrors] = useState({})
+  const [dataIsCorrect, setDataIsCorrect] = useState(false)
 
   let navigate = useNavigate();
-  
-  const routeChange = () =>{ 
-		let path = `/`; 
-		navigate(path);
-		// window.location(path)
-	  }
+
+  const handleChange = (e) => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value
+    })
+    console.log(values)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(values)
+    setErrors(loginValidation(values))
+    console.log(errors);
+    setDataIsCorrect(true)
+    console.log("no error---submited")
+  }
+
+  useEffect(() => {
+    if (Object.keys(errors).length === 0 && dataIsCorrect) {
+      // ---> api call & take neccessary action here
+      console.log("submited value", values);
+      navigate(`/`);
+    }
+  }, [errors])
+
   return (
     <div className="main">
-     <div className="sub-main">
-       <div>
-         <div className="imgs">
-           <div className="container-image">
-             <img src={profile} alt="profile" className="profile"/>
-
-           </div>
-
-
-         </div>
-         <div>
-           <h1>Login Page</h1>
-           <div>
-             {/* <img src={email} alt="email" className="email"/> */}
-             <input type="text" placeholder="User email" className="name" required/>
-           </div>
-           <div className="second-input">
-             {/* <img src={pass} alt="pass" className="email"/> */}
-             <input type="password" placeholder="Password" className="name" required/>
-           </div>
-          <div className="login-button">
-          <button className="btn btn-style btn-style-border" type="submit" onClick={routeChange}> Login</button>
+      <div className="sub-main">
+        <div>
+          <div className="imgs">
+            <div className="container-image">
+              <img src={profile} alt="profile" className="profile" />
+            </div>
           </div>
-           
-            <p className="link">
-              <a href="#">Forgot password ?</a> Or <a href="#">Sign Up</a>
-            </p>
-           
- 
-         </div>
-       </div>
-       
-
-     </div>
+          <div>
+            <h1>Login Page</h1>
+            <form action="/">
+              <div>
+                <input type="text" placeholder="User email" className="name" name="email" id="email" onChange={handleChange} value={values.email} />
+                {errors.email && <p style={{ color: "red" }}>*{errors.email}</p>}
+              </div>
+              <div className="second-input">
+                <input type="password" placeholder="Password"  className="name" name="password" id="password" onChange={handleChange} value={values.password} />
+                {errors.password && <p style={{ color: "red" }}>*{errors.password}</p>}
+              </div>
+              <div className="login-button">
+                <button className="btn btn-style btn-style-border" onClick={handleSubmit}>Login</button>
+              </div>
+              <p className="link">
+                <a href="#">Forgot password ?</a> Or <a href="/signup">Sign Up</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
