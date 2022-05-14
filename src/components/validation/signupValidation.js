@@ -14,6 +14,12 @@ const signupValidation = (values) => {
         errors.password = "Password must be more than three characters"
     }
 
+    if(!values.confirmPassword){
+        errors.confirmPassword = "Confirm Password is required"
+    }else if(values.password !== values.confirmPassword){
+        errors.confirmPassword = "Password is missmatched"
+    }
+
     return errors;
 }
 
