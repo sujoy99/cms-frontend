@@ -28,15 +28,15 @@ function Signup() {
                         <h1>Sign Up</h1>
                         <div>
                             {/* <img src={email} alt="email" className="email"/> */}
-                            <input type="text" placeholder="User email" className="name" />
+                            <input type="text" placeholder="User email" className="name" required />
                         </div>
                         <div className="second-input">
                             {/* <img src={pass} alt="pass" className="email"/> */}
-                            <input type="password" placeholder="Password" className="name" />
+                            <input type="password" placeholder="Password" className="name" required />
                         </div>
                         <div className="second-input">
                             {/* <img src={pass} alt="pass" className="email"/> */}
-                            <input type="password" placeholder=" Confirm Password" className="name" />
+                            <input type="password" placeholder=" Confirm Password" className="name" required />
                         </div>
                         <div className="Submit">
                             <button className="btn btn-style btn-style-border" type="submit" onClick={routeChange}> Submit</button>

@@ -4,7 +4,7 @@ const Chef = () => {
     return (
         <>
             <section>
-                <h3 className="text-center section">Chef List</h3>
+                <h3 className="text-center section p-3">Chef List</h3>
                 <div className="container">
                     {/* card 1 starts  */}
                     <div class="card">
