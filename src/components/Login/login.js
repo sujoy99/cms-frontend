@@ -52,11 +52,11 @@ function Login() {
             <h1>Login Page</h1>
             <form action="/">
               <div>
-                <input type="text" placeholder="User email" className="name" name="email" id="email" onChange={handleChange} value={values.email} />
+                <input type="text" placeholder="User email" className="name form-input" name="email" id="email" onChange={handleChange} value={values.email} />
                 {errors.email && <p style={{ color: "red" }}>*{errors.email}</p>}
               </div>
               <div className="second-input">
-                <input type="password" placeholder="Password"  className="name" name="password" id="password" onChange={handleChange} value={values.password} />
+                <input type="password" placeholder="Password"  className="name form-input" name="password" id="password" onChange={handleChange} value={values.password} />
                 {errors.password && <p style={{ color: "red" }}>*{errors.password}</p>}
               </div>
               <div className="login-button">

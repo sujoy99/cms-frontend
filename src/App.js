@@ -5,6 +5,7 @@ import Login from "./components/Login/login"
 import Welcome from './components/Welcome/Welcome'
 import Chef from './components/Chef/Chef'
 import Package from './components/Package/Package'
+import Booking from './components/Booking/Booking'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './components/SignUp/signup';
@@ -21,6 +22,7 @@ const App = () => (
           <Route exact path='/signup' element={< Signup />}></Route>
           <Route exact path='/chef' element={< Chef />}></Route>
           <Route exact path='/package' element={< Package />}></Route>
+          <Route exact path='/booking' element={< Booking />}></Route>
         </Routes>
       </div>
       

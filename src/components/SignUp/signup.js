@@ -52,15 +52,15 @@ function Signup() {
                         <h1>Sign Up</h1>
                         <form action="/">
                             <div>
-                                <input type="text" placeholder="User email" className="name" name="email" id="email" onChange={handleChange} value={values.email} />
+                                <input type="text" placeholder="User email" className="name form-input" name="email" id="email" onChange={handleChange} value={values.email} />
                                 {errors.email && <p style={{ color: "red" }}>*{errors.email}</p>}
                             </div>
                             <div className="second-input">
-                                <input type="password" placeholder="Password"  className="name" name="password" id="password" onChange={handleChange} value={values.password} />
+                                <input type="password" placeholder="Password"  className="name form-input" name="password" id="password" onChange={handleChange} value={values.password} />
                                 {errors.password && <p style={{ color: "red" }}>*{errors.password}</p>}
                             </div>
                             <div className="second-input">
-                                <input type="password" placeholder="Password"  className="name" name="confirmPassword" id="confirmPassword" onChange={handleChange} value={values.confirmPassword} />
+                                <input type="password" placeholder="Password"  className="name form-input" name="confirmPassword" id="confirmPassword" onChange={handleChange} value={values.confirmPassword} />
                                 {errors.confirmPassword && <p style={{ color: "red" }}>*{errors.confirmPassword}</p>}
                             </div>
                             <div className="Submit">

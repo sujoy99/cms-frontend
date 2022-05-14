@@ -5,6 +5,13 @@ const Chef = () => {
         <>
             <section>
                 <h3 className="text-center section p-3">Chef List</h3>
+
+                <div className="row">
+                    <div className="col-12 ">
+                        <a className="btn btn-secondary btn-lg float-end" href="/booking"><h3>Booking</h3></a>
+                    </div>
+
+                </div>
                 <div className="container">
                     {/* card 1 starts  */}
                     <div class="card">
@@ -26,7 +33,7 @@ const Chef = () => {
                                             <span class="fa fa-star"></span>
                                         </div>
                                         <div className="col-2">
-                                            <a className="btn btn-sm btn-primary p-3 rounded">Detail</a>
+                                            <a className="btn btn-sm btn-primary p-3 rounded" href="#">Detail</a>
                                         </div>
                                     </div>
                                 </div>
