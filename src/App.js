@@ -6,6 +6,8 @@ import Welcome from './components/Welcome/Welcome'
 import Chef from './components/Chef/Chef'
 import Package from './components/Package/Package'
 import Booking from './components/Booking/Booking'
+import FilterChef from './components/FilterChef/FilterChef'
+import AboutChef from './components/AboutChef/AboutChef'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './components/SignUp/signup';
@@ -23,6 +25,8 @@ const App = () => (
           <Route exact path='/chef' element={< Chef />}></Route>
           <Route exact path='/package' element={< Package />}></Route>
           <Route exact path='/booking' element={< Booking />}></Route>
+          <Route exact path='/filterChef' element={< FilterChef />}></Route>
+          <Route path="/aboutChef/:chefId" element={<AboutChef />} />
         </Routes>
       </div>
       
