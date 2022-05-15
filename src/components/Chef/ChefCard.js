@@ -1,7 +1,6 @@
 import React from 'react'
-import {
-    Link
-  } from "react-router-dom";
+import { Link} from "react-router-dom";
+
 const ChefCard = ({ chefData }) => {
     return (
         <>
@@ -12,9 +11,9 @@ const ChefCard = ({ chefData }) => {
 
                     return (
                         <>
-                            <div class="card">
-                                <div class="card-header"></div>
-                                <div class="card-body">
+                            <div className="card">
+                                <div className="card-header"></div>
+                                <div className="card-body">
                                     <div className="row">
                                         <div className="col-1">
                                             <img src="./images/logo512.png" alt="" className="img-fluid rounded" height="50px" width="50px"></img>
@@ -24,11 +23,11 @@ const ChefCard = ({ chefData }) => {
                                                 <div className="col-10">
                                                     <h4>{name}</h4>
                                                     <h5>{category}</h5>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
+                                                    <span className="fa fa-star checked"></span>
+                                                    <span className="fa fa-star checked"></span>
+                                                    <span className="fa fa-star checked"></span>
+                                                    <span className="fa fa-star"></span>
+                                                    <span className="fa fa-star"></span>
                                                 </div>
                                                 <div className="col-2">
                                                     {/* <a className="btn btn-sm btn-primary p-3 rounded" href="/aboutChef/1">Choose</a> */}
@@ -39,7 +38,7 @@ const ChefCard = ({ chefData }) => {
                                     </div>
 
                                 </div>
-                                <div class="card-footer"></div>
+                                <div className="card-footer"></div>
                             </div>
 
                         </>

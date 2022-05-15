@@ -8,6 +8,7 @@ import Package from './components/Package/Package'
 import Booking from './components/Booking/Booking'
 import FilterChef from './components/FilterChef/FilterChef'
 import AboutChef from './components/AboutChef/AboutChef'
+import ChefProfile from './components/ChefProfile/ChefProfile'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './components/SignUp/signup';
@@ -27,6 +28,7 @@ const App = () => (
           <Route exact path='/booking' element={< Booking />}></Route>
           <Route exact path='/filterChef' element={< FilterChef />}></Route>
           <Route path="/aboutChef/:chefId" element={<AboutChef />} />
+          <Route path="/chefProfile/:chefId" element={<ChefProfile />} />
         </Routes>
       </div>
       
