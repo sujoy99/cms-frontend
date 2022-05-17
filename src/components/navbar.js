@@ -12,7 +12,6 @@ const Navbar = () => {
 						<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={() => { setShow(!show) }}>
 							<span className="navbar-toggler-icon"></span>
 						</button>
-						<img src="./images/logo512.png" alt="" className="img-fluid rounded" height="50px" width="50px"></img>
 						<div className={`collapse navbar-collapse ${show ? "show" : " "} `} >
 							<ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
 								<li className="nav-item">
@@ -27,7 +26,7 @@ const Navbar = () => {
 								<li className="nav-item">
 									<div className="">
 
-										{/* <img src="./images/logo512.png" alt="" class="img-fluid"></img> */}
+										<img src="./images/logo512.png" alt="" className="img-fluid rounded" height="50px" width="50px"></img>
 									</div>
 								</li>
 								<li className="nav-item">
@@ -41,9 +40,18 @@ const Navbar = () => {
 								</li>
 
 							</ul>
+							{/* <Nav>
+								<NavDropdown title="Other">
+									<NavDropdown.Item><a className="btn btn-style" href="/signup">Sign Up</a></NavDropdown.Item>
+									<NavDropdown.Item><a className="btn btn-style" href="/signup">Login</a></NavDropdown.Item>
+									<NavDropdown.Item><a className="btn btn-style" href="/signup">Log Out</a></NavDropdown.Item>
+								</NavDropdown>
+								
+							</Nav> */}
 							<form className="d-flex">
-								<a className="btn btn-style" href="/signup" style={{ paddingTop: "6px" }}>Sign Up</a>
+								
 								<a className="btn btn-style btn-style-border" href="/login" style={{ paddingTop: "6px" }}>Log In</a>
+								<a className="btn btn-style btn-style-border" href="" style={{ paddingTop: "6px" }}>Log Out</a>
 							</form>
 						</div>
 
