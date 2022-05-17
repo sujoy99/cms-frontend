@@ -9,10 +9,10 @@
   .sub-main {
     display: flex;
     justify-content: center;
-    height: 510px;
+    height: 550px;
     width: 35%;
     box-shadow: 5px 5px 5px 5px rgb(207, 207, 207);
-    padding-top: 30px;
+    /* padding-top: 30px; */
     border-radius: 15px; 
     background-color: white;
   }
@@ -36,7 +36,7 @@
     border-radius: 130px;
   } 
 
-  input{
+  .form-input{
       width: 300px;
       height: 50px;
       border-radius: 60px;
