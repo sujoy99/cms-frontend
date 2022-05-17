@@ -32,7 +32,7 @@ const Navbar = () => {
 			<section className="navbar-bg" >
 				<nav className="navbar navbar-expand-lg navbar-light" >
 					<div className="container">
-						<a class="navbar-brand" href="#">Navbar</a>
+						{/* <a class="navbar-brand" href="#">Navbar</a> */}
 						<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={() => { setShow(!show) }}>
 							<span className="navbar-toggler-icon"></span>
 						</button>
@@ -61,18 +61,19 @@ const Navbar = () => {
 								<li className="nav-item">
 									<a className="nav-link" href="#">Contact</a>
 								</li>
-								<li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Others <FiChevronDown /> </Link>
+								<li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> <FiChevronDown /> </Link>
 									<ul className={boxClassSubMenu.join(' ')} >
 										<li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/login`}> Log In </NavLink> </li>
 										<li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/`}> Log Out </NavLink> </li>
+										<li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/UserProfile`}> User Profile </NavLink> </li>
 									</ul>
 								</li>
 
 							</ul>
 							<form className="d-flex"> 
 
-								<a className="btn btn-style btn-style-border" href="/login" style={{ paddingTop: "6px" }}>Log In</a>
-								<a className="btn btn-style btn-style-border" href="" style={{ paddingTop: "6px" }}>Log Out</a>
+								<a className="btn btn-style btn-style-border" href="/signup" style={{ paddingTop: "6px" }}>Sign Up</a>
+								{/* <a className="btn btn-style btn-style-border" href="" style={{ paddingTop: "6px" }}>Log Out</a> */}
 							</form>
 						</div>
 
