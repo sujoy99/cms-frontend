@@ -38,6 +38,9 @@ const Navbar = () => {
 								<li className="nav-item">
 									<a className="nav-link" href="#">Contact</a>
 								</li>
+								<li className="nav-item">
+									<a className="nav-link" href="#">Others</a>
+								</li>
 
 							</ul>
 							{/* <Nav>
@@ -49,7 +52,7 @@ const Navbar = () => {
 								
 							</Nav> */}
 							<form className="d-flex">
-								
+								<a className="btn btn-style" href="/signup" style={{ paddingTop: "6px" }}>Sign Up</a>
 								<a className="btn btn-style btn-style-border" href="/login" style={{ paddingTop: "6px" }}>Log In</a>
 								<a className="btn btn-style btn-style-border" href="" style={{ paddingTop: "6px" }}>Log Out</a>
 							</form>
