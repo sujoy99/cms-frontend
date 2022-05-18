@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+import { Dropdown } from 'react-bootstrap'
 // import logo from '../../img/logo.png';
 const Navbar = () => {
 	const [show, setShow] = useState(false);
@@ -61,13 +62,24 @@ const Navbar = () => {
 								<li className="nav-item">
 									<a className="nav-link" href="#">Contact</a>
 								</li>
-								<li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> <FiChevronDown /> </Link>
+								<Dropdown>
+								  <Dropdown.Toggle variant="link" id="dropdown-basic">
+									Dropdown Button
+								  </Dropdown.Toggle>
+
+								  <Dropdown.Menu>
+									<Dropdown.Item href="/login"> Log In</Dropdown.Item>
+									<Dropdown.Item href="/">Log Out</Dropdown.Item>
+									<Dropdown.Item href="//UserProfile">User Profile</Dropdown.Item>
+								  </Dropdown.Menu>
+								</Dropdown>
+								{/* <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> <FiChevronDown /> </Link>
 									<ul className={boxClassSubMenu.join(' ')} >
 										<li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/login`}> Log In </NavLink> </li>
 										<li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/`}> Log Out </NavLink> </li>
 										<li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/UserProfile`}> User Profile </NavLink> </li>
 									</ul>
-								</li>
+								</li> */}
 
 							</ul>
 							<form className="d-flex"> 
