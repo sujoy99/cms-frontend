@@ -1,0 +1,32 @@
+[
+  {
+    "display_name": "Dashboard",
+    "route": "/categoryname",
+    "icon": "bx bx-category-alt"
+  },
+  {
+    "display_name": "Category Name",
+    "route": "/categoryname",
+    "icon": "bx bx-user-pin"
+  },
+  {
+    "display_name": "Items",
+    "route": "/item",
+    "icon": "bx bx-package"
+  },
+  {
+    "display_name": "Coupon",
+    "route": "/coupon",
+    "icon": "bx bx-cart"
+  },
+  {
+    "display_name": "User List",
+    "route": "/userlist",
+    "icon": "bx bx-bar-chart-alt"
+  },
+  {
+    "display_name": "Teacher List",
+    "route": "/teacherlist",
+    "icon": "bx bx-list-ol"
+  }
+]

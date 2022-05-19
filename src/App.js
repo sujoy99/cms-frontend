@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from "./components/navbar"
 import Footer from "./components/Footer/footer";
 import Login from "./components/Login/login"
+import LogOut from "./components/LogOut/logOut"
 import Welcome from './components/Welcome/Welcome'
 import Chef from './components/Chef/Chef'
 import Package from './components/Package/Package'
@@ -19,6 +20,7 @@ const App = () => (
   <Router >
     <div className="page-container">
       <div className="content-wrap">
+        <Routes><Route exact path='/logOut' element={< LogOut />}></Route></Routes>
         <Navbar />
         <Routes>
           <Route exact path='/' element={< Welcome />}></Route>

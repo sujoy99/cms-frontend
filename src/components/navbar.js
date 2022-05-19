@@ -1,32 +1,32 @@
 import React, { useState } from 'react'
-import {NavLink, Link} from 'react-router-dom';
-import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+import { NavLink, Link } from 'react-router-dom';
+import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
 import { Dropdown } from 'react-bootstrap'
 // import logo from '../../img/logo.png';
 const Navbar = () => {
 	const [show, setShow] = useState(false);
-    const [isMenu, setisMenu] = useState(false);
-    const [isResponsiveclose, setResponsiveclose] = useState(false);
-    const toggleClass = () => {
-      setisMenu(isMenu === false ? true : false);
-      setResponsiveclose(isResponsiveclose === false ? true : false);
-  };
-    let boxClass = ["main-menu menu-right menuq1"];
-    if(isMenu) {
-        boxClass.push('menuq2');
-    }else{
-        boxClass.push('');
-    }
-    const [isMenuSubMenu, setMenuSubMenu] = useState(false);
-    const toggleSubmenu = () => {
-      setMenuSubMenu(isMenuSubMenu === false ? true : false);
-    };
-    let boxClassSubMenu = ["sub__menus"];
-    if(isMenuSubMenu) {
-        boxClassSubMenu.push('sub__menus__Active');
-    }else {
-        boxClassSubMenu.push('');
-    }
+	const [isMenu, setisMenu] = useState(false);
+	const [isResponsiveclose, setResponsiveclose] = useState(false);
+	const toggleClass = () => {
+		setisMenu(isMenu === false ? true : false);
+		setResponsiveclose(isResponsiveclose === false ? true : false);
+	};
+	let boxClass = ["main-menu menu-right menuq1"];
+	if (isMenu) {
+		boxClass.push('menuq2');
+	} else {
+		boxClass.push('');
+	}
+	const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+	const toggleSubmenu = () => {
+		setMenuSubMenu(isMenuSubMenu === false ? true : false);
+	};
+	let boxClassSubMenu = ["sub__menus"];
+	if (isMenuSubMenu) {
+		boxClassSubMenu.push('sub__menus__Active');
+	} else {
+		boxClassSubMenu.push('');
+	}
 
 	return (
 		<>
@@ -62,16 +62,30 @@ const Navbar = () => {
 								<li className="nav-item">
 									<a className="nav-link" href="#">Contact</a>
 								</li>
-								<Dropdown>
-								  <Dropdown.Toggle variant="link" id="dropdown-basic">
-									Dropdown Button
-								  </Dropdown.Toggle>
 
-								  <Dropdown.Menu>
-									<Dropdown.Item href="/login"> Log In</Dropdown.Item>
-									<Dropdown.Item href="/">Log Out</Dropdown.Item>
-									<Dropdown.Item href="//UserProfile">User Profile</Dropdown.Item>
-								  </Dropdown.Menu>
+								<form className="d-flex">
+
+									<a className="btn btn-style btn-style-border" href="/signup" style={{ paddingTop: "6px" }}>Sign Up</a>
+									{/* <a className="btn btn-style btn-style-border" href="" style={{ paddingTop: "6px" }}>Log Out</a> */}
+								</form>
+								<Dropdown>
+									<Dropdown.Toggle variant="link" id="dropdown-basic">
+										{/* Dropdown Button */}
+									</Dropdown.Toggle>
+
+									<Dropdown.Menu>
+										<Dropdown.Item>
+											<Dropdown.Toggle variant="link" id="dropdown-basic">
+												Log In
+											</Dropdown.Toggle>
+											<Dropdown.Menu>
+												<Dropdown.Item href="/login">Admin Login</Dropdown.Item>
+												<Dropdown.Item href="/login">User Login</Dropdown.Item>
+											</Dropdown.Menu>
+										</Dropdown.Item>
+										<Dropdown.Item href="/logOut">Log Out</Dropdown.Item>
+										<Dropdown.Item href="/UserProfile">User Profile</Dropdown.Item>
+									</Dropdown.Menu>
 								</Dropdown>
 								{/* <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> <FiChevronDown /> </Link>
 									<ul className={boxClassSubMenu.join(' ')} >
@@ -82,11 +96,6 @@ const Navbar = () => {
 								</li> */}
 
 							</ul>
-							<form className="d-flex"> 
-
-								<a className="btn btn-style btn-style-border" href="/signup" style={{ paddingTop: "6px" }}>Sign Up</a>
-								{/* <a className="btn btn-style btn-style-border" href="" style={{ paddingTop: "6px" }}>Log Out</a> */}
-							</form>
 						</div>
 
 					</div>
