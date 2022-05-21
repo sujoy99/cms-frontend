@@ -77,6 +77,7 @@ const Navbar = () => {
 									<Dropdown.Item href="/login"> Log In</Dropdown.Item>
 									<Dropdown.Item href="/logOut">Log Out</Dropdown.Item>
 									<Dropdown.Item href="/UserProfile">User Profile</Dropdown.Item>
+									<Dropdown.Item href="/Dashboard">Dashboard</Dropdown.Item>
 								  </Dropdown.Menu>
 								</Dropdown>
 								{/* <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> <FiChevronDown /> </Link>
