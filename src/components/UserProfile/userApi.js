@@ -1,39 +1,39 @@
-const chefData = [
+const userData = [
     {
         id: "1",
-        name: "chef1",
+        name: "user1",
         category: "category1"
     },
     {
         id: "2",
-        name: "chef2",
+        name: "user2",
         category: "category2"
     },
     {
         id: "3",
-        name: "chef3",
+        name: "user3",
         category: "category3"
     },
     {
         id: "4",
-        name: "chef4",
+        name: "user4",
         category: "category4"
     },
     {
         id: "5",
-        name: "chef5",
+        name: "user5",
         category: "category5"
     },
     {
         id: "6",
-        name: "chef6",
+        name: "user6",
         category: "category6"
     },
     {
         id: "7",
-        name: "chef7",
+        name: "user7",
         category: "category7"
     },
 ]
 
-export default chefData;
+export default userData;

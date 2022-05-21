@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link, useParams } from "react-router-dom";
 
-import UserData from '../userApi';
+import UserData from './userApi';
 
 const UserProfile = () => {
-    const { chefId } = useParams();
-    const chef = UserData.filter(itemInArray => itemInArray.id === userId);
+    const { userId } = useParams();
+    const user = UserData.filter(itemInArray => itemInArray.id === userId);
     const { id, name, category } =user[0]
 
     return (
