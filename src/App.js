@@ -10,7 +10,7 @@ import FilterChef from './components/FilterChef/FilterChef'
 import AboutChef from './components/AboutChef/AboutChef'
 import ChefProfile from './components/ChefProfile/ChefProfile'
 // import Others from './components/Others/Others';
- import Dashboard from './components/Pages/Dashboard';
+//  import Dashboard from './components/Pages/Dashboard';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './components/SignUp/signup';
@@ -35,7 +35,7 @@ const App = () => (
           <Route path="/aboutChef/:chefId" element={<AboutChef />} />
           <Route path="/chefProfile/:chefId" element={<ChefProfile />} />
           {/* <Route path='/Others' element={<Others />}></Route>  */}
-          <Route path='/Dashboard' element={<Dashboard />}></Route> 
+          {/* <Route path='/Dashboard' element={<Dashboard />}></Route>  */}
 
         </Routes>
       </div>
