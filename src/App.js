@@ -9,6 +9,7 @@ import Booking from './components/Booking/Booking'
 import FilterChef from './components/FilterChef/FilterChef'
 import AboutChef from './components/AboutChef/AboutChef'
 import ChefProfile from './components/ChefProfile/ChefProfile'
+import Service from './components/Service/Service';
 // import Others from './components/Others/Others';
 //  import Dashboard from './components/Pages/Dashboard';
 
@@ -26,7 +27,7 @@ const App = () => (
         <Routes>
           <Route exact path='/' element={< Welcome />}></Route>
           <Route exact path='/login' element={< Login />}></Route>
-          {/* <Route exact path='/' element={< LogOut/>}></Route> */}
+          <Route exact path='/' element={< Service/>}></Route> 
           <Route exact path='/signup' element={< Signup />}></Route>
           <Route exact path='/chef' element={< Chef />}></Route>
           <Route exact path='/package' element={< Package />}></Route>

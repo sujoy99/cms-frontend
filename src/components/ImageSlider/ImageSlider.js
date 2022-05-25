@@ -10,7 +10,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-export default class ImageSlider extends React.Component{
+export default class ImageSlider extends React.Component {
+    
     render() {
         const settings = {
             className: "center",
@@ -23,29 +24,33 @@ export default class ImageSlider extends React.Component{
         return (
             <div>
                 <Slider {...settings}>
+                    {/* <div>
+
+                        <h1>Package1</h1>
+                    </div> */}
                     <div>
                         <img src={profile} alt="profile" className="profile" />
-                       <h1>Package1</h1> 
+                        <a href="/Package"><h1>Package 1</h1></a>
                     </div>
                     <div>
                         <img src={profile1} alt="profile" className="profile" />
-                        <h1>Package2</h1>
+                        <a href="/Package"><h1>Package 2</h1></a>
                     </div>
                     <div>
                         <img src={profile2} alt="profile" className="profile" />
-                        <h1>Package3</h1>
+                        <a href="/Package"><h1>Package 3</h1></a>
                     </div>
                     <div>
                         <img src={profile3} alt="profile" className="profile" />
-                        <h1>Package4</h1>
+                        <a href="/Package"><h1>Package 4</h1></a>
                     </div>
                     <div>
                         <img src={profile4} alt="profile" className="profile" />
-                        <h1>Package5</h1>
+                        <a href="/Package"><h1>Package 5</h1></a>
                     </div>
                     <div>
                         <img src={profile2} alt="profile" className="profile" />
-                        <h1>Package6</h1>
+                        <a href="/Package"><h1>Package 6</h1></a>
                     </div>
                 </Slider>
             </div>
